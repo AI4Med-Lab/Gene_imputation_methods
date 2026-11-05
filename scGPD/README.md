@@ -137,14 +137,6 @@ Result/
 
 Only files for **executed** folds are generated. `metrics_summary.csv` summarizes the folds that ran; its standard deviation is a **sample standard deviation** via pandas `.std()`. In the uploaded script, the summary also includes numeric metadata such as `fold`, so select the relevant metric columns for reporting.
 
-## Reproducibility and limitations
-
-- Set `--rand` to control NumPy, Python, PyTorch, and shuffled gene-fold randomness.
-- Keep dataset preprocessing and shared-gene ordering consistent when comparing other methods.
-- The current reference training and validation datasets both point to the same scRNA-seq observations. There is no independent cell-based validation split.
-- The uploaded script contains a runtime device-safety patch for scGPD's Bernoulli-Concrete sampler; compatibility depends on the installed scGPD version.
-- The benchmarking adaptation has not been established as numerically identical to the original scGPD authors' evaluation protocol.
-
 ## Attribution
 
 This project **uses and adapts** the scGPD software developed by its original authors:

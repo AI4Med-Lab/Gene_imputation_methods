@@ -1,0 +1,28 @@
+{
+    "result_path": "/Path/to/your/Results/CasperResults",
+    "dataset_name": "starMAP", 
+    "ckpt_path": "",
+    "data_path": "/Path/to/your/data",
+    "idx_path": "/Path/to/your/data",
+    "epochs": 200,
+    "model": "CASPER",
+    "freeze_encoders":false,
+    "rand_seed": 0,
+    "use_hvg_subset": true,
+    "n_top_hvg": 20000, 
+    "use_hvg": false, 
+    "early_stop_patience":50 ,
+    "batch_size": 2048,
+    "learning_rate": 0.00001,
+    "weight_decay": 1e-5,
+    "emb_dim": 256,
+    "n_heads": 8,
+    "dropout": 0.1,
+    "leiden_resolution": 1.0,
+    "device": "cuda",
+    "n_pcs": 30,
+    "trip": 0.2,
+    "loss": "MSE", 
+    "margin": 18
+}
+
